@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-// import { Link } from 'react-router-dom';
+import { Link } from '@reach/router';
 
 const Wrapper = styled.div`
   display: flex;
@@ -21,8 +21,7 @@ const Title = styled.div`
   /* text-transform: uppercase; */
 `;
 
-// const MyLink = styled(Link)`
-const MyLink = styled.a`
+const MyLink = styled(Link)`
   text-decoration: none;
   color: black;
 
