@@ -1,6 +1,6 @@
 import React from 'react';
 import { HomeWrapper } from './Home.styled';
-import BandCard from './Card';
+import Card from './Card';
 import Data from './data';
 
 const Bands = Data.bands;
@@ -8,13 +8,13 @@ const Bands = Data.bands;
 const Home = () => (
   <HomeWrapper>
     {Bands.map(band => (
-      <BandCard
+      <Card
         key={band.name}
-        bandUrl={`/artists/${band.url}`}
+        bandUrl={band.url}
         image={band.heroImage}
       >
         {band.name}
-      </BandCard>
+      </Card>
     ))}
   </HomeWrapper>
 );
