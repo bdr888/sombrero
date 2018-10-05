@@ -12,7 +12,4 @@ const HomeWrapper = styled.div`
   }
 `;
 
-export {
-  HomeWrapper,
-};
-
+export default HomeWrapper;

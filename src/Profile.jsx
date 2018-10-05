@@ -10,11 +10,6 @@ import {
   Bio,
 } from './Profile.styled';
 
-import Data from './data';
-
-const artists = Data.bands;
-
-
 const Profile = ({ bandName, image, members, description }) => (
   <Wrapper>
     <Image src={image} />

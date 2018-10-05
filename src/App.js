@@ -1,15 +1,20 @@
 import React, { Component } from 'react';
-import { Router, Link } from '@reach/router';
+import { Router } from '@reach/router';
+import { Wrapper } from './App.styled';
+import Header from './Header';
 import Home from './Home';
 import Artist from './Artist';
 
 class App extends Component {
   render() {
     return (
-      <Router>
-        <Home path="/" />
-        <Artist path=":artistId" />
-      </Router>
+      <Wrapper>
+        <Header />
+        <Router>
+          <Home path="/" />
+          <Artist path=":artistId" />
+        </Router>
+      </Wrapper>
     );
   }
 }

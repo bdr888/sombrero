@@ -31,6 +31,7 @@ const Lineup = styled.div`
   padding: 1rem;
 `;
 
+// not using, do i need?
 const Description = styled.div`
   font-size: 1rem;
   text-align: left;

@@ -1,14 +1,14 @@
-import React, { PureComponent } from 'react';
+import React from 'react';
 import Profile from './Profile';
 import Releases from './Releases';
 import ArtistWrapper from './Artist.styled';
+import FooterNav from './FooterNav';
 import Data from './data';
 
 const Bands = Data.bands;
 
-const Artist = props => {
-  const artist = Bands.filter(band => band.url === props.artistId);
-  console.log(artist[0].members);
+const Artist = ({ artistId }) => {
+  const artist = Bands.filter(band => band.url === artistId);
   return (
     <ArtistWrapper>
       <Profile
@@ -25,6 +25,7 @@ const Artist = props => {
         albumTitle={artist[0].albums.albumTitle}
         spotifyEmbed={artist[0].albums.spotifyEmbed}
       />
+      <FooterNav />
     </ArtistWrapper>
   );
 };
