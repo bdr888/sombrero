@@ -18,6 +18,7 @@ const Image = styled.img`
 const Title = styled.div`
   font-size: 1.2rem;
   text-align: center;
+  white-space: nowrap;
   /* text-transform: uppercase; */
 `;
 

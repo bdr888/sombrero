@@ -4,7 +4,8 @@ import styled from 'styled-components';
 import sombrero from './assets/sombrero.png';
 
 const Footer = styled.div`
-  margin: 1rem;
+  /* margin: 1rem auto; */
+  width: 100%;
   border-top: 5px solid black;
 `;
 
