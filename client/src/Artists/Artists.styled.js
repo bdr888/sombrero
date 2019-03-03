@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const HomeWrapper = styled.div`
+const ArtistsWrapper = styled.div`
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: 5;
@@ -12,4 +12,4 @@ const HomeWrapper = styled.div`
   }
 `;
 
-export default HomeWrapper;
+export default ArtistsWrapper;
