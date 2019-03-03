@@ -4,11 +4,12 @@ const Wrapper = styled.div`
   display: grid;
   justify-content: space-around;
   align-items: center;
+  padding: 0 1rem;
+  max-width: 800px;
   
   @media (min-width:515px) {
     grid-template: auto / 1fr 2fr;
   }
-
 `;
 
 const Info = styled.div`
@@ -25,22 +26,25 @@ const Image = styled.img`
 `;
 
 const Lineup = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
   font-size: 1rem;
-  text-align: center;
-  text-transform: uppercase;
   padding: 1rem;
 `;
 
-// not using, do i need?
-const Description = styled.div`
+const Member = styled.div`
+  padding: 0.25rem 0;
+`;
+
+const Name = styled.div`
   font-size: 1rem;
-  text-align: left;
-  max-width: 600px;
-  padding: 1rem;
-  
-  @media (min-width:515px) {
-    grid-column-start: 2;
-  }
+  font-weight: 600;
+`;
+
+const Instrument = styled.div`
+  font-size: 1rem;
 `;
 
 const BandName = styled.div`
@@ -62,11 +66,13 @@ const Bio = styled.div`
 `;
 
 export {
-  Description,
   BandName,
-  Image,
-  Lineup,
-  Wrapper,
-  Info,
   Bio,
+  Image,
+  Info,
+  Instrument,
+  Lineup,
+  Member,
+  Name,
+  Wrapper,
 };

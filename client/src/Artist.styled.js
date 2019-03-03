@@ -5,7 +5,8 @@ const ArtistWrapper = styled.div`
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
-  text-align: center; 
+  text-align: center;
+  padding: 0 2rem;
 `;
 
 export default ArtistWrapper;

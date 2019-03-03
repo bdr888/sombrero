@@ -9,8 +9,9 @@ const Wrapper = styled.div`
 const ReleaseTitle = styled.div`
   font-size: 1.5rem;
   text-align: center;
-  margin: 2rem auto;
+  margin: 2rem auto 1rem;
   border-bottom: 5px solid black;
+  width: 100%;
 `;
 
 const SpotifyEmbed = styled.div`
@@ -19,7 +20,6 @@ const SpotifyEmbed = styled.div`
 
 const Record = styled.div`
   text-align: center;
-  align-self: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -28,16 +28,8 @@ const Record = styled.div`
 const RecordArt = styled.img`
   height: 20rem;
   width: 20rem;
-  /* border: 2px solid black; */
   margin-bottom: 1rem;
 `;
-
-// const RecordArt = styled.div`
-//   height: 20rem;
-//   width: 20rem;
-//   border: 2px solid black;
-//   margin-bottom: 1rem;
-// `;
 
 const RecordTitle = styled.div`
   font-weight: 700;

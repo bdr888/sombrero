@@ -1,27 +1,29 @@
 import React from 'react';
 import { arrayOf, string, node, shape } from 'prop-types';
 import {
-  Description,
   BandName,
-  Image,
-  Lineup,
-  Info,
-  Wrapper,
   Bio,
+  Image,
+  Instrument,
+  Lineup,
+  Member,
+  Name,
+  Wrapper,
 } from './Profile.styled';
 
 const Profile = ({ bandName, image, members, description }) => (
   <Wrapper>
-    <Image src={image} />
-    <BandName>{bandName}</BandName>
-    <Lineup>
-      {members.map(member => (
-        <div key={member.name}>
-          {member.instrument} - {member.name}
-        </div>
-      ))}
-    </Lineup>
-    <Bio>{description}</Bio>
+      <Image src={image} />
+      <BandName>{bandName}</BandName>
+      <Lineup>
+        {members.map(member => (
+          <Member key={member.name}>
+            <Name>{member.name}</Name>
+            <Instrument>{member.instrument}</Instrument>
+          </Member>
+        ))}
+      </Lineup>
+      <Bio>{description}</Bio>
   </Wrapper>
 );
 
