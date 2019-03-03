@@ -4,6 +4,7 @@ import { Wrapper } from './App.styled';
 import Header from './Header';
 import Home from './Home';
 import Artist from './Artist';
+import About from './About/About';
 
 class App extends Component {
   render() {
@@ -13,6 +14,7 @@ class App extends Component {
         <Router>
           <Home path="/" />
           <Artist path=":artistId" />
+          <About path="/about" />
         </Router>
       </Wrapper>
     );
