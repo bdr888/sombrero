@@ -5,6 +5,9 @@ import Header from './Header';
 import Artists from './Artists/Artists';
 import Artist from './ArtistPage/Artist';
 import About from './About/About';
+import Gallery from './Gallery/Gallery';
+import Listen from './Listen/Listen';
+import Home from './Home/Home';
 
 class App extends Component {
   render() {
@@ -12,9 +15,12 @@ class App extends Component {
       <Wrapper>
         <Header />
         <Router>
-          <Artists path="/" />
-          <Artist path=":artistId" />
+          <Home path="/" />
           <About path="/about" />
+          <Artists path="/artists" />
+          <Artist path=":artistId" />
+          <Gallery path="/gallery" />
+          <Listen path="/listen" />
         </Router>
       </Wrapper>
     );
