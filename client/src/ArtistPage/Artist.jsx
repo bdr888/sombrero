@@ -2,8 +2,8 @@ import React from 'react';
 import Profile from './Profile';
 import Releases from './Releases';
 import ArtistWrapper from './Artist.styled';
-import FooterNav from './FooterNav';
-import Data from './data';
+import FooterNav from '../../src/FooterNav';
+import Data from '../data';
 
 const Bands = Data.bands;
 

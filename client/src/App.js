@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import { Router } from '@reach/router';
 import { Wrapper } from './App.styled';
 import Header from './Header';
-import Home from './Home';
-import Artist from './Artist';
+import Artists from './Artists/Artists';
+import Artist from './ArtistPage/Artist';
 import About from './About/About';
 
 class App extends Component {
@@ -12,7 +12,7 @@ class App extends Component {
       <Wrapper>
         <Header />
         <Router>
-          <Home path="/" />
+          <Artists path="/" />
           <Artist path=":artistId" />
           <About path="/about" />
         </Router>
