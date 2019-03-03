@@ -5,6 +5,7 @@ const Wrapper = styled.div`
   background-color: black;
   width: 100%;
   padding-bottom: 1rem;
+
 `;
 
 // const Sombrero = styled.img`
@@ -23,7 +24,25 @@ const Title = styled.div`
   font-size: 2rem;
   text-align: center;
   color: white;
-  padding: 1rem 0 2rem;
+  padding: 1rem 0;
+  
+  @media (min-width: 450px) {
+    padding: 1rem 0 2rem;
+  }
+`;
+
+const Links = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 auto;
+  max-width: 700px;
+  padding: 0 1rem;
+
+  @media (min-width: 450px) {
+    flex-direction: row;
+  }
 `;
 
 const MyLink = styled(Link)`
@@ -31,6 +50,7 @@ const MyLink = styled(Link)`
   color: white;
   text-transform: uppercase;
   font-weight: 600;
+  margin: 0.5rem 0;
 
     &:link{
       color: white;
@@ -45,24 +65,10 @@ const MyLink = styled(Link)`
     }
 `;
 
-const Links = styled.div`
-  display: flex;
-  justify-content: space-around;
-  margin: 0 auto;
-  max-width: 700px;
-`;
-
-const Section = styled.div`
-color: white;
-text-transform: uppercase;
-font-weight: 600;
-`;
-
 export {
   Wrapper,
   // Sombrero,
   Title,
   MyLink,
   Links,
-  Section,
 };
