@@ -1,16 +1,18 @@
 import React from 'react';
-import { Wrapper, MyLink, Title } from './Header.styled';
-// import sombrero from './assets/SombreroTitle.png';
-
-// @todo make header smaller on artist page
-// @todo
+import { Links, Section, Wrapper, MyLink, Title } from './Header.styled';
 
 const Header = () => (
   <Wrapper>
     <MyLink to={'/'}>
       <Title>Sombrero Records</Title>
-      {/* <Sombrero alt="home" src={sombrero} /> */}
     </MyLink>
+    <Links>
+      <MyLink to={'/'}>Home</MyLink>
+      <MyLink to={'/about'}>About</MyLink>
+      <MyLink to={'/'}>Artists</MyLink>
+      <MyLink to={'/'}>Gallery</MyLink>
+      <MyLink to={'/'}>Listen</MyLink>
+    </Links>
   </Wrapper>
 );
 
