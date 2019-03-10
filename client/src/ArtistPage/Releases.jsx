@@ -10,11 +10,14 @@ import {
   RecordDetails,
   Wrapper,
   ReleaseTitle,
+  ReleasesWrapper,
 } from './Releases.styled';
 
 // @todo album art modal
 
-// where should this go? in a server, puts it directly into a db, keep it out of client?
+// @todo where should this go? 
+// Artist page could be the container that calls for data, then passes down albumLength prop to here.
+
 // dynamically calculate height of album embed
 // const getAlbumLength = () => (
 //   axios.get('https://api.spotify.com/v1/users/etsitramai/playlists/0CJzBeJcS8d0wv5PP9tWhp/tracks')
@@ -27,8 +30,8 @@ import {
 //     }));
 
 const Releases = props => (
-  <div>
-    <ReleaseTitle>Releases</ReleaseTitle>
+  <ReleasesWrapper>
+    <ReleaseTitle>Recordings</ReleaseTitle>
     <Wrapper>
       <Record>
         <RecordArt src={props.albumImage} />
@@ -40,15 +43,14 @@ const Releases = props => (
         <iframe
           title="HoT-ThankYou"
           src={props.spotifyEmbed}
-          width="400"
+          width="100%"
           height="500"
-          // height={albumLength()}
+          // height={props.albumLenght}
           frameBorder="0"
-          // allowTransparency="true"
         />
       </SpotifyEmbed>
     </Wrapper>
-  </div>
+  </ReleasesWrapper>
 );
 
 Releases.propTypes = {

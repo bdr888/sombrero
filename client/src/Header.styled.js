@@ -4,8 +4,8 @@ import { Link } from '@reach/router';
 const Wrapper = styled.div`
   background-color: black;
   width: 100%;
+  margin: 0 auto;
   padding-bottom: 1rem;
-
 `;
 
 // const Sombrero = styled.img`

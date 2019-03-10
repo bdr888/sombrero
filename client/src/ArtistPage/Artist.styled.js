@@ -2,11 +2,11 @@ import styled from 'styled-components';
 
 const ArtistWrapper = styled.div`
   display: flex;
-  flex-flow: column wrap;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 0 2rem;
+  max-width: 950px;
 `;
 
 export default ArtistWrapper;
