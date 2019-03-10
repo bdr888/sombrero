@@ -1,5 +1,13 @@
 import styled from 'styled-components';
 
+const ReleasesWrapper = styled.div`
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+`;
+
 const Wrapper = styled.div`
   display: flex;
   flex-flow: row wrap;
@@ -12,10 +20,12 @@ const ReleaseTitle = styled.div`
   margin: 2rem auto 1rem;
   border-bottom: 5px solid black;
   width: 100%;
+  padding-bottom: 0.5rem;
 `;
 
 const SpotifyEmbed = styled.div`
-  margin: 1rem;
+  margin: 0.5rem;
+  max-width: 450px;
 `;
 
 const Record = styled.div`
@@ -23,6 +33,7 @@ const Record = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: 0.5rem;
 `;
 
 const RecordArt = styled.img`
@@ -52,4 +63,5 @@ export {
   Wrapper,
   ReleaseTitle,
   SpotifyEmbed,
+  ReleasesWrapper,
 };

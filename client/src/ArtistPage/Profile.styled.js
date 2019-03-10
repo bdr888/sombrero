@@ -4,8 +4,6 @@ const Wrapper = styled.div`
   display: grid;
   justify-content: space-around;
   align-items: center;
-  padding: 0 1rem;
-  max-width: 800px;
   
   @media (min-width:515px) {
     grid-template: auto / 1fr 2fr;
@@ -35,6 +33,8 @@ const Lineup = styled.div`
 `;
 
 const Member = styled.div`
+  display: flex;
+  flex-flow: row wrap;
   padding: 0.25rem 0;
 `;
 

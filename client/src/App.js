@@ -8,6 +8,7 @@ import About from './About/About';
 import Gallery from './Gallery/Gallery';
 import Listen from './Listen/Listen';
 import Home from './Home/Home';
+import Footer from './Footer';
 
 class App extends Component {
   render() {
@@ -18,10 +19,11 @@ class App extends Component {
           <Home path="/" />
           <About path="/about" />
           <Artists path="/artists" />
-          <Artist path=":artistId" />
+          <Artist path="/artists/:artistId" />
           <Gallery path="/gallery" />
           <Listen path="/listen" />
         </Router>
+        <Footer />
       </Wrapper>
     );
   }

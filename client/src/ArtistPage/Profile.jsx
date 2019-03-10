@@ -18,8 +18,7 @@ const Profile = ({ bandName, image, members, description }) => (
       <Lineup>
         {members.map(member => (
           <Member key={member.name}>
-            <Name>{member.name}</Name>
-            <Instrument>{member.instrument}</Instrument>
+            <Name>{member.name}</Name><span>&nbsp;-&nbsp;</span><Instrument>{member.instrument}</Instrument>
           </Member>
         ))}
       </Lineup>
