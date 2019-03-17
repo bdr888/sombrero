@@ -2,10 +2,18 @@ import styled from 'styled-components';
 import { Link } from '@reach/router';
 
 const Wrapper = styled.div`
-  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to bottom right, black, #545454);
   width: 100%;
   margin: 0 auto;
-  padding-bottom: 1rem;
+
+  @media (min-width: 440px) {
+    flex-direction: column;
+    padding-bottom: 1rem;
+  }
 `;
 
 // const Sombrero = styled.img`
@@ -13,7 +21,7 @@ const Wrapper = styled.div`
 //   width: 90%;
 //   height: auto;
 
-//   @media (min-width:515px) {
+//   @media (min-width:415px) {
 //     width: auto;
 //     height: 50px;
 //   }
@@ -21,27 +29,28 @@ const Wrapper = styled.div`
 
 const Title = styled.div`
   font-family: 'Roboto', cursive;
-  font-size: 2rem;
+  font-size: 1.6rem;
   text-align: center;
   color: white;
-  padding: 1rem 0;
-  
-  @media (min-width: 450px) {
-    padding: 1rem 0 2rem;
+  padding: 1rem 0.5rem 1rem 1rem;
+
+  @media (min-width: 440px) {
+    padding: 2rem 0 1rem;
+    font-size: 2rem;
   }
 `;
 
 const Links = styled.div`
-  display: flex;
-  flex-direction: column;
+  display: none;
+  flex-direction: row;
   align-items: center;
   justify-content: space-around;
   margin: 0 auto;
+  width: 100%;
   max-width: 700px;
-  padding: 0 1rem;
 
-  @media (min-width: 450px) {
-    flex-direction: row;
+  @media (min-width: 440px) {
+    display: flex;
   }
 `;
 
@@ -52,23 +61,29 @@ const MyLink = styled(Link)`
   font-weight: 600;
   margin: 0.5rem 0;
 
-    &:link{
-      color: white;
-    }
-    
-    &:hover{
-      color: grey;
-    }
-    
-    &:active{
-      color: #f410b1;
-    }
+  &:link {
+    color: white;
+  }
+
+  &:hover {
+    color: grey;
+  }
+
+  &:active {
+    color: #f410b1;
+  }
 `;
 
-export {
-  Wrapper,
-  // Sombrero,
-  Title,
-  MyLink,
-  Links,
-};
+const HamburgerMenu = styled.div`
+  color: white;
+  border: 5px solid white;
+  width: 40px;
+  height: 40px;
+  margin: 1rem;
+
+  @media (min-width: 440px) {
+    display: none;
+  }
+`;
+
+export { HamburgerMenu, Links, MyLink, Title, Wrapper };
