@@ -1,5 +1,5 @@
 import React from 'react';
-import { Links, Wrapper, MyLink, Title } from './Header.styled';
+import { Links, Wrapper, MyLink, Title, HamburgerMenu } from './Header.styled';
 
 const Header = () => (
   <Wrapper>
@@ -13,6 +13,7 @@ const Header = () => (
       <MyLink to={'/gallery'}>Gallery</MyLink>
       <MyLink to={'/listen'}>Listen</MyLink>
     </Links>
+    <HamburgerMenu />
   </Wrapper>
 );
 

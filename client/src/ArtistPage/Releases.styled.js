@@ -16,6 +16,7 @@ const Wrapper = styled.div`
 
 const ReleaseTitle = styled.div`
   font-size: 1.5rem;
+  font-weight: 700;
   text-align: center;
   margin: 2rem auto 1rem;
   border-bottom: 5px solid black;
